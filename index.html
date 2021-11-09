@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>
+	<meta charset="UTF-8">
+	<title>OGD Image Creator</title>
+	<script src="libraries/p5.min.js" type="text/javascript"></script>
+	<script language="javascript" type="text/javascript" src="libraries/p5.dom.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="config.js" type="text/javascript"></script>
+	<script src="https://d3js.org/d3-selection.v1.min.js"></script>
+	<script src="sketch.js" type="text/javascript"></script>
+	<style> body {padding: 0; margin: 0;} canvas {vertical-align: top;} </style>
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Ausgetretener Benutzer (Migration)</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Ausgetretener Benutzer (Migration)</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:Order msdt:dt="string">692500.000000000</mso:Order>
+<mso:TemplateUrl msdt:dt="string"></mso:TemplateUrl>
+<mso:xd_ProgID msdt:dt="string"></mso:xd_ProgID>
+<mso:_SourceUrl msdt:dt="string"></mso:_SourceUrl>
+<mso:_SharedFileIndex msdt:dt="string"></mso:_SharedFileIndex>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+<body>
+	<div id="settings">
+		<div id="document" class="section">
+			Document <select id="format"></select><br><br>
+
+
+
+			Width: <input value="500" type="text" id="size-x"><span>px</span><br>
+			Height: <input value="500" type="text" id="size-y"><span>px</span><br>
+			<button id="resize">OK</button>
+		</div>
+		<div id="layers" class="section">
+			Layers
+			<div id="layers-select" class="select">
+			</div>
+		</div>
+		<div id="export" class="section">
+			Export<br><br>
+			<button id="png">PNG</button><button id="jpg">JPG</button>
+		</div>
+	</div>
+	<div id="canvas"></div>
+	<div id="hidden"></div>
+	<canvas id="myCanvas" />
+</body>
+</html>

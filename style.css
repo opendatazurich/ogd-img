@@ -1,0 +1,130 @@
+body{
+	margin: 0px;
+	color: #E7EAEE;
+	font-family: Arial;
+	font-size: 12px;
+}
+
+#settings{
+	position: absolute;
+	height: 100%;
+	background: #131B25;
+	width: 250px;
+	overflow-y: hidden;
+}
+
+#settings .section{
+	padding: 8px 10px 6px;
+	border-bottom: 1px solid #E7EAEE;
+}
+
+#layers .img-settings{
+	text-align: right;
+	width: 100%;
+	margin-top: -112px;
+}
+
+#settings input{
+	margin: 0px 4px;
+	width: 40px;
+	background: none;
+	border: none;
+	border-bottom: 1px solid #E7EAEE;
+	color: #E7EAEE;
+	text-align: right;
+	height: 11px;
+}
+
+#settings #document button{
+	right: 10px;
+    position: absolute;
+    margin: -14px 0px 0px;
+}
+
+#settings button.mini{
+	width: 17px;
+}
+
+#settings button.button3{
+	width: 32px;
+}
+
+#settings button{
+	background: #E7EAEE;
+    border: none;
+    margin: 0px;
+    width: 50px;
+    height: 13px;
+    padding: 0px;
+    margin: 5px 0px 0px 5px;
+}
+
+#settings button.is-delete{
+	color: #d24;
+}
+
+#settings select{
+	background: #E7EAEE;
+    border: none;
+    width: 120px;
+    right: 10px;
+    border-radius: 0px !important;
+    height: 18px;
+    position: absolute;
+}
+
+#settings .image{
+	width: 116px;
+	height: 112px;
+	border: none;
+	padding: 0px;
+	margin-top: 8px;
+	background-size: cover;
+}
+#settings .image.custom{
+	background: #E7EAEE;
+}
+
+#settings .image.custom b{
+	color: #131B25;
+	text-align: center;
+	width: 100%;
+	padding-top: 42px;
+	display: block;
+}
+
+#settings .select{
+	border: none;
+	padding: 0px;
+	/*max-height: 400px;*/
+	overflow-y: auto;
+}
+
+#canvas{
+	position: absolute;
+	left: 250px;
+	height: 100%;
+	top: 0px;
+	right: 0px;
+	overflow: auto;
+}
+
+canvas{
+	padding: 20px;
+}
+
+#hidden{
+	display: none;
+}
+
+img{
+	opacity: 0;
+	pointer-events: none;
+	position: absolute;
+}
+
+img.image{
+	opacity: 1;
+	pointer-events: all;
+	position: relative;
+}
